@@ -3,199 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vela</title>
+    <title>Portfolio - Grigorev Vladislav</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="./img/logo.png">
+    <link rel="icon" href="./images/logo.jpg" type="image/jpg">
 </head>
 <body>
-    <!-- ! ШАПКА -->
-    <header id="header" class="header">
+    <header class="header">
         <div class="container header_container">
-            <div class="header_wrapper_link">
-                <div class="header_left_link">
-                    <span class="city_img"></span>
-                    <a href="#!" class="header_city_link">Сайлент-Хилл</a>
-                    <a href="tel:+75555553750" class="header_number_link">+7 555 555-37-50</a>
-                </div>
-                <div class="header_middle_link">
-                    <a href="#!" class="timetable_days">Ежедневно</a>
-                    <a href="#!" class="timetable_time">9:00 — 21:00</a>
-                </div>
-                <div class="header_navigation_link">
-                    <a href="#!" class="">Доставка</a>
-                    <a href="#!">Оплата</a>
-                    <a href="#!">Контакты</a>
-                </div>
-            </div>
-            <div class="header_main_info">
-                <nav class="header_main_nav" aria-label="Основное меню">
-                    <div class="header_logo">
-                        <a href="#!" class="header_logo_link"><img src="./img/icons/logo.svg" alt="Название компании" class="header_logo_img"></a>
-                    </div>
-                    <!-- *ВЫПАДАЮЩИЙ СПИСОК -->
-                    <div class="dropdown">
-                        <button class="dropdown_btn"></button>
-                        <div class="dropdown_content">
-                            <div class="menu-columns">
-                                <div class="main-menu">
-                                    <!-- Основные пункты меню -->
-                                    <div class="menu-item" data-submenu="submenu-smartphones">
-                                        <a href="#" class="products1">
-                                            <span class="menu-icon icon-1"></span>
-                                            Смартфоны и гаджеты
-                                            <span class="arrow">></span>
-                                        </a>
-                                    </div>
-                                    <div class="menu-item" data-submenu="submenu-laptops">
-                                        <a href="#" class="products2">
-                                            <span class="menu-icon icon-2"></span>
-                                            Ноутбуки и компьютеры
-                                            <span class="arrow">></span>
-                                        </a>
-                                    </div>
-                                    <div class="menu-item" data-submenu="submenu-tv">
-                                        <a href="#" class="products3">
-                                            <span class="menu-icon icon-3"></span>
-                                            Телевизоры и цифровое ТВ
-                                            <span class="arrow">></span>
-                                        </a>
-                                    </div>
-                                    <div class="menu-item" data-submenu="submenu-audio">
-                                        <a href="#" class="products4">
-                                            <span class="menu-icon icon-4"></span>
-                                            Аудиотехника
-                                            <span class="arrow">></span>
-                                        </a>
-                                    </div>
-                                    <div class="menu-item" data-submenu="submenu-sales">
-                                        <a href="#" class="products5">
-                                            <span class="menu-icon icon-5"></span>
-                                            Акции
-                                            <span class="arrow">></span>
-                                        </a>
-                                    </div>
-                                    <div class="menu-item" data-submenu="submenu-new">
-                                        <a href="#" class="products6">
-                                            <span class="menu-icon icon-6"></span>
-                                            Новинки
-                                            <span class="arrow">></span>
-                                        </a>
-                                    </div>
-                                </div>
-                                
-                                <!-- Контейнер для подменю -->
-                                <div class="submenu-container">
-                                    <!-- Подменю для смартфонов -->
-                                    <div class="smart_and_gajet">
-                                        <div id="submenu-smartphones" class="submenu">
-                                            <h4 class="smartphone">Смартфоны</h4>
-                                            <a href="#" data-value="1.1">Apple iPhone <span class="number">123</span></a>
-                                            <a href="#" data-value="1.2">Смартфоны <span class="number">227</span></a>
-                                            <a href="#" data-value="1.3">iPhone <span class="number">120</span></a>
-                                            <a href="#" data-value="1.4">Складные <span class="number">30</span></a>
-                                            <a href="#" data-value="1.5">realme <span class="number">120</span></a>
-                                            <a href="#" data-value="1.6">Huawei Mate X6 <span class="number">100</span></a>
-                                            <a href="#" data-value="1.7">Кнопочные <span class="number">23</span></a>
-                                            <a href="#" data-value="1.8">Домашние <span class="number">17</span></a>
-                                            <a href="#" data-value="1.9">Samsung <span class="number">27</span></a>
-                                        </div>
-                                    </div>
-
-                                    
-                                    <!-- Подменю для ноутбуков -->
-                                    <div id="submenu-laptops" class="submenu">
-                                        <h4>Ноутбуки и компьютеры</h4>
-                                        <a href="#" data-value="2.1">Игровые ноутбуки</a>
-                                        <a href="#" data-value="2.2">Ультрабуки</a>
-                                        <a href="#" data-value="2.3">Рабочие станции</a>
-                                        <a href="#" data-value="2.4">Компоненты ПК</a>
-                                    </div>
-                                    
-                                    <!-- Подменю для телевизоров -->
-                                    <div id="submenu-tv" class="submenu">
-                                        <h4>Телевизоры и ТВ</h4>
-                                        <a href="#" data-value="3.1">4K UHD телевизоры</a>
-                                        <a href="#" data-value="3.2">Smart TV</a>
-                                        <a href="#" data-value="3.3">OLED панели</a>
-                                    </div>
-                                    
-                                    <!-- Подменю для аудио -->
-                                    <div id="submenu-audio" class="submenu">
-                                        <h4>Аудиотехника</h4>
-                                        <a href="#" data-value="4.1">Наушники</a>
-                                        <a href="#" data-value="4.2">Колонки</a>
-                                        <a href="#" data-value="4.3">Звуковые системы</a>
-                                    </div>
-                                    
-                                    <!-- Подменю для акций -->
-                                    <div id="submenu-sales" class="submenu">
-                                        <h4>Специальные предложения</h4>
-                                        <a href="#" data-value="5.1">Горячие скидки</a>
-                                        <a href="#" data-value="5.2">Бесплатная доставка</a>
-                                    </div>
-                                    
-                                    <!-- Подменю для новинок -->
-                                    <div id="submenu-new" class="submenu">
-                                        <h4>Новые поступления</h4>
-                                        <a href="#" data-value="6.1">Последние модели</a>
-                                        <a href="#" data-value="6.2">Только что поступило</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="search_line">
-                        <form action="" class="searth-form" role="search">
-                            <input
-                                type="text" 
-                                class="search-input" 
-                                placeholder="Поиск товаров..." 
-                            >
-                            <button
-                                type="submit"
-                                class="search-button"
-                                aria-label="Выполнить поиск"
-                            > Найти
-                            </button>
-                        </form>
-                    </div>
-                    <div class="social_links">
-                        <a href="#!" class="telegram_link"></a>
-                        <a href="#!" class="whatsapp_link"></a>
-                    </div>
-                    <div class="language-switcher">
-                        <button class="lang-btn-russia" aria-label="Русский (текущий)" disabled>EN</button>
-                        |
-                        <button class="lang-btn-english" aria-label="English">RU</button>
-                    </div>
-                    <div class="other_buttons">
-                        <button class="other1"></button>
-                        <button class="other2"></button>
-                        <button class="other3"></button>
-                    </div>
-                </nav>
-            </div>
-            <div class="header_button_helper">
-                <div class="wrapper_btn">
-                    <button class="btn_promo">Акции</button>
-                    <button class="btn_hot">Горячее предложение</button>
-                    <button class="btn_gift">Подарочные наборы</button>
-                    <button class="btn_events">События</button>
-                    <button class="btn_brends">Наши бренды</button>
-                </div>
-                <button class="order">+ Собрать компьютер</button>
-            </div>
+            <a href="#home" class="header_title">My Portfolio</a>
+            <nav class="hader_nav">
+                <a href="#home" class="header_link">home</a>
+                <a href="#skills" class="header_link">skills</a>
+                <a href="#projects" class="header_link">projects</a>
+                <a href="#contacts" class="header_link">contacts</a>
+            </nav>
         </div>
     </header>
-<!-- ! ПРИВЕТСТВЕННАЯ СЕКЦИЯ -->
-    <section class="welcome">
-        <div class="container welcome_container">
-            <h2 class="welcome_title">Отправляйся в приключения с нашими<br>эпическими лут-корзинами и наборами!</h2>
-            <p class="welcome_desk">Развивай свои навыки, следуя мудрым стратегиям мастеров, и поднимайся на новый уровень мастерства! С нашей поддержкой каждое твое действие станет частью великого искусства, а победы — результатом точного плана и безупречной подготовки!</p>
-            <button class="welcome_btn">В каталог</button>
-        </div>
+    <main  class="main">
+        <section id="home"  class="welcome">
+            <div class="container welcome_container">
+                <div class="welcome_left_card">
+                    <h1 class="welcome_title">Hi, I'm<br> <span class="welcome_gradient">Vladislav Grigorev</span></h1>
+                    <p class="welcome_desk">I am a frontend junior developer and I am looking for a job in this position. I will be happy to complete tasks provided by the team leader. I am very hardworking and always ready for something new, and would like to be part of some company. I have 1 years of development experience, including on my own pet projects, but also in a team, actively using the Git version control system for convenient collaborative development. I always strive to learn something new and am not lazy. I developed applications on React, Next: landing pages, online stores, chats, social networks, etc., and in my free time I study, or rather watch video tutorials, layout websites, study new technologies and libraries.</p>
+                    
+                    <a href="./CV-Grigorev .pdf" download="CV-Grigorev .pdf">
+                    <button  class="btn_PDF">Download resume (PDF)</button>
+                    </a>
+                    
+                </div>
+                <div class="welcome_right_card">
+                    <p class="welcome_stats1">My Description:</p>
+                    <p class="welcome_stats">- Frontend Developer</p>
+                    <p class="welcome_stats">- One year experiance</p>
+                    <p class="welcome_stats">- Junior</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container skills_container">
+                <h1 class="skills_main_title">This is my best skills</h1>
+                <div class="my_skills_anymore">
+                    <p class="skills_list">HTML CSS</p>
+                    <div class="progress-bar"></div>
+                    <p class="skills_list">JavaScript</p>
+                    <div class="progress-bar_JS"></div>
+                    <p class="skills_list">React</p>
+                    <div class="progress-bar"></div>
+                </div>
+                <div class="skills_all_cards">
+                    <div class="skills_cards">
+                        <img src="./images/icons/html.png" alt="" class="skills_icon">
+                        <h4 class="skills_card_title">HTML</h4>
+                        <p class="skills_card_desk">HTML (HyperText Markup Language) is the standard language used to create and design web pages. It serves as the foundation of web development, allowing developers to structure content on the web using various elements and tags.</p>
+                    </div>
+                    <div class="skills_cards">
+                        <img src="./images/icons/css.png" alt="" class="skills_icon">
+                        <h4 class="skills_card_title">CSS + SCSS, Tailwind</h4>
+                        <p class="skills_card_desk">CSS (Cascading Style Sheets) is used to style and layout web pages, defining the look and feel of HTML elements. SCSS (Sassy CSS) is a more advanced version of CSS, offering features like variables, nesting, and mixins to make writing and maintaining styles easier and more efficient.</p>
+                    </div>
+                    <div class="skills_cards">
+                        <img src="./images/icons/js.png" alt="" class="skills_icon">
+                        <h4 class="skills_card_title">Javascript + Typescript</h4>
+                        <p class="skills_card_desk">JavaScript (JS) is a versatile programming language used for creating dynamic and interactive web content. TypeScript (TS) is a superset of JavaScript that adds static type checking, which helps in catching errors early and improving code maintainability.</p>
+                    </div>
+                    <div class="skills_cards">
+                        <img src="./images/icons/react.png" alt="" class="skills_icon">
+                        <h4 class="skills_card_title">ReactJs</h4>
+                        <p class="skills_card_desk">React is a JavaScript library for building fast and dynamic user interfaces with reusable components and efficient state management. Its helps to write code more faster and it makes code writing easy for developers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h1 id="projects" class="main_title_proj">ALL MY PROJECT</h1>
+        <section  class="cofee_landing">
+            <div  class="container cofee_landing_container"></div>
+                <h1  class="number">#1</h1>
+                <h1 class="title_project">
+    My first landing page, a copy of the Starbucks website</h1>
+                <div class="owwner_img">
+                    <img class="starbucks_img" src="./images/starbucks/1.png" alt="coffee">
+                </div>
+                <a href="https://project-coffee-landing-git-main-adadads-projects-6c88aac2.vercel.app/" class="btn_open_site">OPEN SITE</a>
+        </section>
+
+        <section id="projects" class="burger_landing">
+            <div class="container burger_landing_container"></div>
+                <h1 class="number">#2</h1>
+                <h1 class="title_project_burger">
+    My second landing page, a burger site</h1>
+                <div class="owwner_img_burger">
+                    <img class="burgrer_img" src="./images/burger/burger_landing.png" alt="coffee">
+                </div>
+                <a href="https://burger-landing-five.vercel.app/" class="btn_open_site_burger">OPEN SITE</a>
+        </section>
+
+        <section class="forest_landing">
+            <div class="container forest_landing_container"></div>
+                <h1 class="number">#3</h1>
+                <h1 class="title_project_forest">
+My third website for a cottage rental company</h1>
+                <div class="owwner_img_forest">
+                    <img class="forest_img" src="./images/forest/Screenshot_1.png" alt="coffee">
+                </div>
+                <a href="https://forest-landing.vercel.app/" class="btn_open_site_forest">OPEN SITE</a>
+        </section>
+
+        <section class="kinza_landing">
+            <div class="container kinza_landing_container"></div>
+                <h1 class="number">#4</h1>
+                <h1 class="title_project_kinza">
+My fourth work for a restaurant in St. Petersburg</h1>
+                <div class="owwner_img_kinza">
+                    <img class="kinza_img" src="./images/kinza/123.png" alt="coffee">
+                </div>
+                <a href="https://kinzalanding-adadads-projects-6c88aac2.vercel.app/" class="btn_open_site_kinza">OPEN SITE</a>
+        </section>
+        
+        <section class="Commercial_experience">
+            <div class="container Commercial_experience"></div>
+                <h1 class="number">#5</h1>
+                <h1 class="title_Commercial_experience">
+My fifth job on a freelance project</h1>
+                <div class="owwner_img_Commercial_experience">
+                    <img class="Commercial_experience_img" src="./images/Commercial_experience/Screenshot_2.png" alt="coffee">
+                </div>
+                <a href="https://test-work-git-main-adadads-projects-6c88aac2.vercel.app/" class="btn_open_test">OPEN SITE</a>
+        </section>
+
+    </main>
+
+    <section id="contacts" class="contacts">
+        <div class="container contacts_container"></div>
+            <h1 class="contacts_title"> CONTACTS INFO</h1>
+            <div class="owner_contacts_L">
+                <p class="desk_contacts">
+
+I hope you liked my small portfolio showing my experience and skills. I want to develop in this area and receive many commercial offers from you. I expect</p>
+            </div>
+            <div class="links">
+                <a href="https://t.me/TPEHBOLOH88">
+                <img src="./images/icons/tg.png" alt="1" class="my_tg">
+                </a>
+                <a href="https://github.com/hq1956">
+                <img src="./images/icons/gh.png" alt="2" class="my_gh">
+                </a>
+            </div>
+            <div class="up_link_owwner">
+                <a href="#home">
+                <img src="./images/icons/44674.png" alt="3"  class="up_link">
+                </a>
+            </div>
     </section>
-    <script src="script.js"></script>
 </body>
 </html>
